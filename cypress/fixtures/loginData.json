@@ -1,0 +1,13 @@
+{
+    "usernameValid":"Admin",
+    "passwordValid":"admin123",
+    "usernameInvalid":"NewAdmin",
+    "passwordInvalid":"Pass123",
+    "lowerCaseUsername":"admin",
+    "upperCaseUsername":"ADMIN",
+    "uppercasePassword":"ADMIN123",
+    "usernameSpace":" Admin",
+    "invalidMessage":"Invalid credentials",
+    "requiredMessage":"Required"
+    
+}

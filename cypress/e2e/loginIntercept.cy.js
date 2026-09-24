@@ -91,6 +91,7 @@ describe('SC_LG_001 Login Feature - Intercept', () => {
 
         cy.get(".oxd-button").click();
         cy.wait('@locations').its('response.statusCode').should('eq', 200);
+        cy.url().should("include", "/dashboard/index");
     });
 
     // intercept 6
