@@ -1,3 +1,4 @@
+import loginData from "../fixtures/loginData.json";
 class loginPage{
     visitURL(){
         cy.visit( "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
@@ -13,6 +14,15 @@ class loginPage{
 
     clickLogin(){
         cy.get(".oxd-button").click();
+    }
+
+    //login
+    login() {
+        this.visitURL();
+        this.inputUsername(loginData.usernameValid);
+        this.inputPassword(loginData.passwordValid);
+        this.clickLogin();
+        this.verifyDashboardPage();
     }
 
     //verify page
